@@ -18,7 +18,6 @@ export default function Profile() {
         </div>
         <div>
           <h1 className="text-3xl font-bold text-theme-text mb-1">{profile.username}</h1>
-          <p className="text-theme-accent font-medium">JLPT {profile.targetLevel} Learner</p>
         </div>
       </header>
 
