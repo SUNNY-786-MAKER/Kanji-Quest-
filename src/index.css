@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-300;
+  }
+
+  :root, [data-theme='light'] {
+    --color-bg: #fcfaf5;
+    --color-panel: #ffffff;
+    --color-text: #2d3748;
+    --color-text-muted: #718096;
+    --color-border: #edf2f7;
+    --color-accent: #c52828;
+    --color-accent-hover: #9b1c1c;
+    --color-accent-bg: #fee2e2;
+  }
+
+  [data-theme='sakura'] {
+    --color-bg: #fff0f5;
+    --color-panel: #ffffff;
+    --color-text: #4a3b42;
+    --color-text-muted: #9e7f8f;
+    --color-border: #f8e1e7;
+    --color-accent: #ff6b95;
+    --color-accent-hover: #d84b72;
+    --color-accent-bg: #ffe4e6;
+  }
+
+  [data-theme='tatami'] {
+    --color-bg: #f3f4eb;
+    --color-panel: #ffffff;
+    --color-text: #3d4a3b;
+    --color-text-muted: #798a76;
+    --color-border: #e2e5d5;
+    --color-accent: #5e7a53;
+    --color-accent-hover: #455c3c;
+    --color-accent-bg: #edf1e9;
+  }
+
+  [data-theme='dark'] {
+    --color-bg: #1a202c;
+    --color-panel: #2d3748;
+    --color-text: #f7fafc;
+    --color-text-muted: #a0aec0;
+    --color-border: #4a5568;
+    --color-accent: #fc8181;
+    --color-accent-hover: #f56565;
+    --color-accent-bg: #742a2a;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+}
