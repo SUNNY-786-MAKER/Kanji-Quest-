@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function Dashboard() {
-  const { profile, progress } = useUserStore();
+  const { profile } = useUserStore();
   const navigate = useNavigate();
 
   const levels = [
@@ -26,24 +26,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* Stats Row */}
-      <section className="grid grid-cols-3 gap-4">
-        <div className="bg-theme-panel p-4 rounded-2xl shadow-sm border border-theme-border flex flex-col items-center">
-          <span className="text-2xl mb-1">🔥</span>
-          <span className="font-bold text-lg text-theme-text">{progress.streak} Day</span>
-          <span className="text-xs text-theme-muted">Streak</span>
-        </div>
-        <div className="bg-theme-panel p-4 rounded-2xl shadow-sm border border-theme-border flex flex-col items-center">
-          <span className="text-2xl mb-1">⭐</span>
-          <span className="font-bold text-lg text-theme-text">{progress.xp} XP</span>
-          <span className="text-xs text-theme-muted">Total XP</span>
-        </div>
-        <div className="bg-theme-panel p-4 rounded-2xl shadow-sm border border-theme-border flex flex-col items-center">
-          <span className="text-2xl mb-1">🈶</span>
-          <span className="font-bold text-lg text-theme-text">{progress.kanjiMastered.length}</span>
-          <span className="text-xs text-theme-muted">Mastered</span>
-        </div>
-      </section>
+
 
       {/* Level Selection */}
       <section>

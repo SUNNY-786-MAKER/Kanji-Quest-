@@ -21,26 +21,7 @@ export default function Profile() {
         </div>
       </header>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="bg-theme-panel p-6 rounded-3xl shadow-sm border border-theme-border">
-          <div className="text-theme-muted mb-2">Total XP</div>
-          <div className="text-3xl font-bold text-theme-text">{progress.xp}</div>
-        </div>
-        <div className="bg-theme-panel p-6 rounded-3xl shadow-sm border border-theme-border">
-          <div className="text-theme-muted mb-2">Longest Streak</div>
-          <div className="text-3xl font-bold text-theme-text">{progress.longestStreak}</div>
-        </div>
-        <div className="bg-theme-panel p-6 rounded-3xl shadow-sm border border-theme-border">
-          <div className="text-theme-muted mb-2">Kanji Mastered</div>
-          <div className="text-3xl font-bold text-theme-text">{progress.kanjiMastered.length}</div>
-        </div>
-        <div className="bg-theme-panel p-6 rounded-3xl shadow-sm border border-theme-border">
-          <div className="text-theme-muted mb-2">Accuracy</div>
-          <div className="text-3xl font-bold text-theme-text">
-            {progress.questionsAnswered > 0 ? Math.round((progress.correctAnswers / progress.questionsAnswered) * 100) : 0}%
-          </div>
-        </div>
-      </div>
+
 
       <section className="bg-theme-panel p-6 rounded-3xl shadow-sm border border-theme-border">
         <h2 className="text-xl font-bold mb-4 text-theme-text">Appearance</h2>
