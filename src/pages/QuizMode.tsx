@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { validKanjiData, Kanji } from '../data/kanji';
@@ -32,7 +32,7 @@ export default function QuizMode() {
   // Generate Questions
   useEffect(() => {
     // Basic question generator for MVP
-    const pool = validKanjiData.filter(k => k.jlptLevel === level || mode === 'mixed');
+    const pool = validKanjiData.filter(k => k.level === level || mode === 'mixed');
     if (pool.length === 0) {
         navigate('/');
         return;

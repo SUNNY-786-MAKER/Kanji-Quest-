@@ -1,4 +1,3 @@
-import React from 'react';
 import { useUserStore } from '../store/userStore';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -50,7 +49,7 @@ export default function Dashboard() {
       <section>
         <h2 className="text-xl font-bold mb-4 text-theme-text">Select a Level to Practice</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {levels.map((level, i) => (
+          {levels.map((level) => (
             <motion.div 
               whileHover={{ y: -4 }}
               key={level.id}

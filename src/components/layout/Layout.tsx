@@ -1,12 +1,10 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Home, Compass, LayoutDashboard, User, Users } from 'lucide-react';
-import { useUserStore } from '../../store/userStore';
+import { Home, User } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 export const Layout: React.FC = () => {
-  const { progress } = useUserStore();
 
   const navItems = [
     { to: "/", icon: Home, label: "Home" },

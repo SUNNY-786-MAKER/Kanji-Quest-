@@ -56,13 +56,13 @@ export const achievements: Achievement[] = [
     title: 'N5 Master',
     description: 'Complete the N5 journey',
     icon: '🌱',
-    condition: (stats) => false, // Will be checked specifically
+    condition: () => false, // Will be checked specifically
   },
   {
     id: 'n2_master',
     title: 'N2 Kanji Master',
     description: 'Conquer the final level',
     icon: '⚔️',
-    condition: (stats) => false, // Will be checked specifically
+    condition: () => false, // Will be checked specifically
   },
 ];

@@ -1,6 +1,4 @@
-import React from 'react';
 import { useUserStore, Theme } from '../store/userStore';
-import { Button } from '../components/ui/Button';
 
 export default function Profile() {
   const { profile, progress, updateProgress } = useUserStore();
